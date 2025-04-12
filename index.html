@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$HCUYE - Hemorrhoid Cream Under Your Eyes Token</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Comic Neue', cursive;
+            background: linear-gradient(135deg, #fdf5e2, #fcedea);
+            color: #333;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff9d6c 100%);
+        }
+        
+        .card {
+            border-radius: 16px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .token-container {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .roadmap-item {
+            position: relative;
+        }
+        
+        .roadmap-item::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 8px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ff6b6b;
+            z-index: 1;
+        }
+        
+        .roadmap-item::after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 28px;
+            width: 2px;
+            height: calc(100% + 20px);
+            background: #ff9d6c;
+            z-index: 0;
+        }
+        
+        .roadmap-item:last-child::after {
+            display: none;
+        }
+        
+        .emoji-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .shake-animation:hover {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            75% { transform: translateX(-10px); }
+            100% { transform: translateX(0); }
+        }
+        
+        .moon-bg {
+            background: radial-gradient(circle, #ffcccb 0%, #ffa500 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="px-6 py-4 bg-white bg-opacity-90 backdrop-filter backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-4xl">🧴</span>
+                <span class="font-bold text-2xl gradient-text">$HCUYE</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="font-medium hover:text-pink-500 transition-colors">About</a>
+                <a href="#tokenomics" class="font-medium hover:text-pink-500 transition-colors">Tokenomics</a>
+                <a href="#roadmap" class="font-medium hover:text-pink-500 transition-colors">Roadmap</a>
+                <a href="https://dapp.quickswap.exchange/swap/v3/0x7B4328c127B85369D9f82ca0503B000D09CF9180/0xA599c9F818276DF5b26514884ABE02e5de79EB9d" class="font-medium hover:text-pink-500 transition-colors">Buy Now</a>
+            </div>
+            <a href="https://dapp.quickswap.exchange/swap/v3/0x7B4328c127B85369D9f82ca0503B000D09CF9180/0xA599c9F818276DF5b26514884ABE02e5de79EB9d" class="shake-animation bg-gradient-to-r from-pink-500 to-orange-400 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition-all">
+                Buy $HCUYE
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-6 flex flex-col items-center">
+            <div class="text-center mb-8">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4">$HCUYE Token</h1>
+                <p class="text-2xl md:text-3xl font-bold">Hemorrhoid Cream Under Your Eyes</p>
+                <p class="text-xl mt-4 max-w-2xl mx-auto">"The token that reduces puffiness in your eyes and your wallet!"</p>
+            </div>
+            
+            <div class="flex justify-center items-center mb-10">
+                <div class="relative">
+                    <div class="text-9xl emoji-float">🧴</div>
+                    <div class="absolute -top-4 -right-4 text-5xl animate-pulse">✨</div>
+                    <div class="absolute -bottom-4 -left-4 text-5xl animate-pulse">👁️</div>
+                </div>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm px-6 py-3 rounded-full">
+                    <span class="font-bold">Launched on Dogechain Spaces #123!</span>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm px-6 py-3 rounded-full">
+                    <span class="font-bold">100% Community Owned</span>
+                </div>
+                <div class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm px-6 py-3 rounded-full">
+                    <span class="font-bold">No Presale, No VC Funding</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">What is $HCUYE?</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold mb-4">The Beauty Hack Wall Street Doesn't Want You To Know!</h3>
+                    <p class="text-lg mb-4">$HCUYE is inspired by the legendary beauty "hack" that celebrities don't want you to know: using hemorrhoid cream to reduce puffiness under your eyes!</p>
+                    <p class="text-lg mb-4">Just like how this weird trick makes your eye bags disappear, our token aims to make your financial bags GROW!</p>
+                    <p class="text-lg italic">"I put hemorrhoid cream under my eyes and my portfolio went 100x!" - Anonymous Crypto Influencer</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative bg-pink-100 p-8 rounded-lg shadow-lg max-w-md">
+                        <div class="text-6xl mx-auto mb-4 flex justify-center">👁️ + 🧴 = 🚀</div>
+                        <div class="text-xl font-bold text-center text-pink-600 mb-2">BEFORE / AFTER</div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-center">
+                                <div class="text-4xl">😫</div>
+                                <p>Puffy & Poor</p>
+                            </div>
+                            <div class="text-3xl font-bold">→</div>
+                            <div class="text-center">
+                                <div class="text-4xl">😎</div>
+                                <p>Smooth & Rich</p>
+                            </div>
+                        </div>
+                        <div class="absolute -top-3 -right-3 text-5xl transform rotate-12">✨</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-yellow-50 p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold mb-4 text-center">Why $HCUYE Will Change Everything</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card bg-white p-6">
+                        <div class="text-4xl mb-3">🧴</div>
+                        <h4 class="text-xl font-bold mb-2">Proven Results*</h4>
+                        <p>*Proven by absolutely no one. But we have confidence! And sometimes that's all you need.</p>
+                    </div>
+                    <div class="card bg-white p-6">
+                        <div class="text-4xl mb-3">💸</div>
+                        <h4 class="text-xl font-bold mb-2">Cheaper Than Botox</h4>
+                        <p>Why pay thousands for Botox when you can just buy our token? Results not guaranteed. Financial advice not given.</p>
+                    </div>
+                    <div class="card bg-white p-6">
+                        <div class="text-4xl mb-3">🤫</div>
+                        <h4 class="text-xl font-bold mb-2">Celebrity Secret</h4>
+                        <p>We can't name names, but many A-list celebrities use hemorrhoid cream under their eyes. We just added blockchain to it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="py-16 bg-gradient-to-r from-pink-50 to-orange-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Tokenomics</h2>
+            
+            <div class="token-container p-8 rounded-xl shadow-lg max-w-3xl mx-auto mb-16">
+                <div class="flex justify-between items-center mb-8">
+                    <div>
+                        <h3 class="text-3xl font-bold">$HCUYE</h3>
+                        <p class="text-lg">Total Supply: 69,000,000,000</p>
+                    </div>
+                    <div class="text-6xl">🧴</div>
+                </div>
+                
+                <div class="mb-8">
+                    <h4 class="text-xl font-bold mb-4">Distribution</h4>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Liquidity Pool</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-4">
+                            <div class="bg-pink-500 h-4 rounded-full" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Community Airdrop</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-4">
+                            <div class="bg-orange-400 h-4 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Eye Cream Research</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-4">
+                            <div class="bg-yellow-400 h-4 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex justify-between mb-1">
+                            <span>Team (Locked for 6.9 months)</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-4">
+                            <div class="bg-purple-400 h-4 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Marketing & Partnerships</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-4">
+                            <div class="bg-blue-400 h-4 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Transaction Taxes</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold">Buy Tax:</span>
+                                <span>0%</span>
+                            </div>
+                            <ul class="mt-2 pl-5 list-disc">
+                                <li>0% Liquidity</li>
+                                <li>0% Marketing</li>
+                                <li>0% Eye Cream Research</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold">Sell Tax:</span>
+                                <span>0%</span>
+                            </div>
+                            <ul class="mt-2 pl-5 list-disc">
+                                <li>0% Liquidity</li>
+                                <li>0% Marketing</li>
+                                <li>0% Eye Cream Research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-6 rounded-xl shadow-md max-w-2xl mx-auto">
+                <h3 class="text-2xl font-bold mb-4 text-center">The $HCUYE Advantage</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-3">💦</div>
+                        <div>
+                            <h4 class="font-bold">Anti-Puffiness Technology</h4>
+                            <p>Our token's unique algorithm prevents your portfolio from getting puffy with inflation.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-3">🔍</div>
+                        <div>
+                            <h4 class="font-bold">Transparency Clear As Your Future Eyes</h4>
+                            <p>Contract is renounced, liquidity locked, and our team doxxed (to their moms at least).</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="text-3xl mr-3">🚫</div>
+                        <div>
+                            <h4 class="font-bold">Anti-Rug Protection</h4>
+                            <p>Our project is so committed to anti-rug technology that we've replaced all team members' homes with hardwood flooring.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Roadmap to Smooth Eyes & Smooth Gains</h2>
+            
+            <div class="moon-bg rounded-full w-36 h-36 flex items-center justify-center text-5xl mx-auto mb-8">
+                🧴🚀
+            </div>
+            
+            <div class="max-w-3xl mx-auto relative pl-10">
+                <div class="absolute left-0 top-0 bottom-0 w-1 bg-orange-300"></div>
+                
+                <div class="roadmap-item mb-12 pl-10">
+                    <div class="bg-pink-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">Phase 1: Launch & Awareness</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Token launch on Dogechain</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Create website that makes absolutely no medical claims</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-green-500 mr-2">✓</span>
+                                <span>Establish social media presence with memes that make people uncomfortable</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-yellow-500 mr-2">⟳</span>
+                                <span>Partner with Z-list influencers willing to put questionable creams under their eyes</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roadmap-item mb-12 pl-10">
+                    <div class="bg-yellow-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">Phase 2: Community & Growth</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Launch "Before & After" NFT collection featuring celebrities who definitely didn't consent</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Begin "Eye Spy" community contest where users spot puffy eyes in the wild</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Create the world's first crypto-funded eye cream that's definitely not just repackaged hemorrhoid cream</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roadmap-item mb-12 pl-10">
+                    <div class="bg-green-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">Phase 3: Utility & Partnerships</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Launch HCUYE-Swap DEX where tokens trade more smoothly than your under-eye skin</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Establish partnership with at least one pharmacy willing to accept $HCUYE for actual hemorrhoid cream</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Develop "PuffTracker" - AI app that measures your eye puffiness and recommends buying more tokens</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="roadmap-item pl-10">
+                    <div class="bg-purple-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-2">Phase 4: Global Domination</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Achieve $1B market cap, making us the most valuable eye-related crypto ever</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Launch literal rocket with $HCUYE logo that will orbit as close to the moon as our budget allows</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Establish the International Institute of Under-Eye Cryptocurrency Research (IIUECR)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-gray-400 mr-2">○</span>
+                                <span>Convince at least one country to adopt $HCUYE as their official currency (looking at you, Vatican City)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <div class="inline-block bg-yellow-100 px-6 py-3 rounded-lg shadow mb-4">
+                    <p class="text-lg font-bold">* Roadmap subject to change based on market conditions, regulatory concerns, common sense, and how many people actually think this is a good idea.</p>
+                </div>
+                <p class="text-lg italic">Remember: The smoothest path to gains is through the skin under your eyes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="buy" class="py-16 bg-gradient-to-b from-pink-100 to-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">How to Buy $HCUYE</h2>
+            
+            <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 mb-12">
+                <div class="flex justify-center mb-6">
+                    <div class="text-6xl">🧴💰</div>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-center mb-6">Follow These Simple Steps</h3>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <div class="bg-pink-500 text-white text-2xl font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 shrink-0">1</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Set Up Dogechain Wallet</h4>
+                            <p>Download MetaMask or your preferred wallet and set up Dogechain Network.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-pink-500 text-white text-2xl font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 shrink-0">2</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Get Dogechain Tokens</h4>
+                            <p>Purchase DOGE and bridge it to Dogechain or buy directly from an exchange.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-pink-500 text-white text-2xl font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 shrink-0">3</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Connect to QuickSwap and Dogechain Network</h4>
+                            <p>Head to QuickSwap and connect your Dogechain wallet on the Dogechain Network.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-pink-500 text-white text-2xl font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 shrink-0">4</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Swap for $HCUYE</h4>
+                            <p>Enter our contract address and swap your $DC for $HCUYE tokens.</p>
+                            <div class="mt-2 p-3 bg-gray-100 rounded-lg flex items-center justify-between">
+                                <code class="text-sm break-all">0xA599c9F818276DF5b26514884ABE02e5de79EB9d</code>
+                                <button class="ml-2 bg-pink-500 text-white px-3 py-1 rounded-lg text-sm" onclick="navigator.clipboard.writeText('0xA599c9F818276DF5b26514884ABE02e5de79EB9d')">Copy</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="bg-pink-500 text-white text-2xl font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 shrink-0">5</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Apply Under Your Eyes</h4>
+                            <p>This step is metaphorical. Please don't actually put your crypto wallet under your eyes.</p>
+                            <p class="text-sm italic mt-1">(Seriously, don't put actual hemorrhoid cream under your eyes without consulting a doctor. This is financial humor, not medical advice.)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-yellow-100 rounded-lg">
+                    <h4 class="font-bold flex items-center"><span class="text-xl mr-2">⚠️</span> Important Notes:</h4>
+                    <ul class="list-disc pl-8 mt-2">
+                        <li>Set slippage to 7-10% to account for our tokenomics</li>
+                        <li>Only buy through official channels and verify the contract address</li>
+                        <li>NEVER share your seed phrase with anyone, not even our "support team"</li>
+                        <li>DYOR - Do Your Own Research (and your own eye cream application)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://dapp.quickswap.exchange/swap/v3/0x7B4328c127B85369D9f82ca0503B000D09CF9180/0xA599c9F818276DF5b26514884ABE02e5de79EB9d" class="shake-animation inline-block bg-gradient-to-r from-pink-500 to-orange-400 text-white font-bold py-3 px-8 rounded-full text-xl shadow-lg hover:shadow-xl transition-all">
+                    Buy $HCUYE Now
+                </a>
+                <p class="mt-4 text-lg">Join us on our journey to smoother eyes and even smoother gains!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Join Our Community</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <a href="https://x.com/dogechainfamily" class="card bg-blue-100 p-8 text-center hover:bg-blue-200 transition-colors">
+                    <div class="text-5xl mb-4">🐦</div>
+                    <h3 class="text-2xl font-bold mb-2">Twitter</h3>
+                    <p>Follow for the latest updates and memes</p>
+                </a>
+                
+                <a href="https://t.me/DogeChainOfficial" class="card bg-indigo-100 p-8 text-center hover:bg-indigo-200 transition-colors">
+                    <div class="text-5xl mb-4">💬</div>
+                    <h3 class="text-2xl font-bold mb-2">Telegram</h3>
+                    <p>Join our active community chat</p>
+                </a>
+                
+                <a href="https://discord.com/invite/e9TQwwmF79" class="card bg-purple-100 p-8 text-center hover:bg-purple-200 transition-colors">
+                    <div class="text-5xl mb-4">🎮</div>
+                    <h3 class="text-2xl font-bold mb-2">Discord</h3>
+                    <p>Connect with fellow eye cream enthusiasts</p>
+                </a>
+            </div>
+            
+            <div class="mt-16 max-w-3xl mx-auto bg-pink-100 p-8 rounded-xl shadow-md">
+                <h3 class="text-2xl font-bold text-center mb-6">The $HCUYE Pledge</h3>
+                <div class="space-y-4">
+                    <p class="text-lg text-center">"We solemnly swear that we are up to no good... but in a fun way that hopefully makes you money."</p>
+                    <p class="text-lg text-center">"We promise to keep the jokes flowing and the token growing."</p>
+                    <p class="text-lg text-center">"In a world of serious cryptocurrencies, we're proud to be the one that makes you laugh while potentially treating your under-eye situation."</p>
+                </div>
+                <div class="mt-6 text-center">
+                    <span class="inline-block text-6xl emoji-float">🧴</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gradient-to-r from-pink-50 to-orange-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">What People Are Saying*</h2>
+            <p class="text-center text-lg italic mb-10">*These people definitely exist and aren't made up at all</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-3">👩‍💼</div>
+                        <div>
+                            <h4 class="font-bold">Karen T.</h4>
+                            <p class="text-sm">Crypto & Eye Cream Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="italic">"I used to have bags under my eyes AND in my portfolio. Now I just have $HCUYE bags! Much better!"</p>
+                    <div class="flex mt-3">
+                        <div class="text-yellow-500 text-lg">★★★★★</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-3">👨‍🦳</div>
+                        <div>
+                            <h4 class="font-bold">Totally Legitimate Dermatologist</h4>
+                            <p class="text-sm">MD, PhD, FOMO</p>
+                        </div>
+                    </div>
+                    <p class="italic">"As a completely real doctor, I can say with absolute uncertainty that this token is definitely one of the tokens I've seen."</p>
+                    <div class="flex mt-3">
+                        <div class="text-yellow-500 text-lg">★★★★☆</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-3">🧔</div>
+                        <div>
+                            <h4 class="font-bold">Crypto Chad</h4>
+                            <p class="text-sm">Professional Diamond Hands</p>
+                        </div>
+                    </div>
+                    <p class="italic">"I bought $HCUYE as a joke, but now my girlfriend says I look five years younger. The token's still worthless though."</p>
+                    <div class="flex mt-3">
+                        <div class="text-yellow-500 text-lg">★★★☆☆</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-4xl mr-3">🐕</div>
+                        <div>
+                            <h4 class="font-bold">Actual Dog</h4>
+                            <p class="text-sm">Good Boy, Dogechain Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="italic">"Woof woof bark woof. [Translation: The tokenomics make as much sense as anything else in crypto these days]"</p>
+                    <div class="flex mt-3">
+                        <div class="text-yellow-500 text-lg">★★★★☆</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg font-bold">100% of made-up customers reported smoother under-eyes!</p>
+                <p class="text-sm italic mt-2">Results may vary. Token may appreciate, depreciate, or do absolutely nothing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Is this a real cryptocurrency?</h3>
+                    <p>Yes! $HCUYE is a real token on the Dogechain blockchain. Is it a good investment? That's an entirely different question we're legally advised not to answer.</p>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Should I really put hemorrhoid cream under my eyes?</h3>
+                    <p>We are absolutely NOT providing medical advice here. Some people claim it works because of the vasoconstrictive ingredients, but please consult a real doctor before putting butt cream on your face.</p>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">What's the use case for $HCUYE?</h3>
+                    <p>What's the use case for any memecoin? Fun, community, and the slim chance that inexplicable market dynamics make us all rich. We're also working on actual eye cream, but don't hold your breath.</p>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Is the team doxxed?</h3>
+                    <p>Our team members are semi-anonymous crypto enthusiasts who are too embarrassed to admit they created a token based on hemorrhoid cream. But we're real people, we promise!</p>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Wen moon?</h3>
+                    <p>The moon is approximately 238,855 miles from Earth. At current rocket speeds, about 3 days. At current token performance, possibly never. But we remain optimistic!</p>
+                </div>
+                
+                <div class="bg-pink-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2">Is this financial advice?</h3>
+                    <p>Absolutely not. Nothing on this website should be taken as financial, medical, or life advice. We're just here to have fun and maybe make a few bucks while reducing under-eye puffiness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h3 class="text-xl font-bold mb-4 text-center">Disclaimer</h3>
+                <div class="bg-white p-4 rounded-lg shadow-md text-sm">
+                    <p class="mb-2">$HCUYE is a meme token created for entertainment purposes. Investing in cryptocurrencies involves significant risk and you should never invest more than you can afford to lose.</p>
+                    <p class="mb-2">This website and token are satirical in nature. We do not make any claims about the efficacy of hemorrhoid cream as an under-eye treatment, nor do we recommend using it for that purpose without proper medical consultation.</p>
+                    <p>The creators of $HCUYE are not financial advisors, medical professionals, or particularly good at making life decisions. DYOR and NFA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gradient-to-r from-pink-500 to-orange-400 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <span class="text-4xl">🧴</span>
+                        <span class="font-bold text-2xl">$HCUYE</span>
+                    </div>
+                    <p class="mt-2">The token that reduces puffiness in your eyes and your wallet!</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://x.com/dogechainfamily" class="text-2xl hover:text-yellow-200 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://t.me/DogeChainOfficial" class="text-2xl hover:text-yellow-200 transition-colors">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://discord.com/invite/e9TQwwmF79" class="text-2xl hover:text-yellow-200 transition-colors">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-white border-opacity-20 text-center">
+                <p> 2023 $HCUYE Token. All rights reserved. No medical claims intended or implied.</p>
+                <p class="mt-2 text-sm">Contract: 0xA599c9F818276DF5b26514884ABE02e5de79EB9d</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple copy function for contract address
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function() {
+                const text = this.previousElementSibling.textContent;
+                navigator.clipboard.writeText(text).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = 'Copied!';
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
